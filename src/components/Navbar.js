@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-icons/fa";
-import { GiHamburgerMenu } from"react-icons/gi"
+import { GiHamburgerMenu } from"react-icons/gi";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { Link } from 'react-router-dom';
 export const  Navbar = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
@@ -20,53 +22,54 @@ export const  Navbar = () => {
           >
             <ul>
               <li>
-                <a href="/">Branches</a>
+                <Link to="/">Branches</Link>
               </li>
               <li>
-                <a href="#">CGPA</a>
+                <Link to="#">CGPA</Link>
               </li>
               <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Clubs
-                    <i class="fa fa-caret-down"></i>
+                <div className="dropdown">
+                  <button className="dropbtn">
+                  <Link to="#" className='fsize'>Clubs
+                    <TiArrowSortedDown />
+                  </Link>
                   </button>
-                  <div class="dropdown-content">
-                    <a href="/techclubs">Technical Clubs</a>
-                    <a href="#">Cultural Clubs</a>
+                  <div className="dropdown-content">
+                    <Link to="/techclubs" className='droptxt'>Technical Clubs</Link>
+                    <Link to="#" className='droptxt'>Cultural Clubs</Link>
                   </div>
                 </div>
               </li>
               <li>
-                <a href="#">Fees</a>
+                <Link to="#">Fees</Link>
               </li>
               <li>
-                <a href="/courses">Courses</a>
+                <Link to="/courses">Courses</Link>
               </li>
             </ul>
           </div>
           <div className="social-media">
             <ul className="social-media-links">
               <li>
-                <a href="https://www.facebook.com/IITMandi2009/">
+                <Link to="https://www.facebook.com/IITMandi2009/">
                   <FaFacebookSquare className="facebook" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.instagram.com/iit_mandi_campus/">
+                <Link to="https://www.instagram.com/iit_mandi_campus/">
                   <FaInstagramSquare className="instagram" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/channel/UCSybolnMMi_8vc5OoX36Vwg">
+                <Link to="https://www.youtube.com/channel/UCSybolnMMi_8vc5OoX36Vwg">
                   <FaYoutubeSquare className="youtube" />
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="hamburger-menu">
-              <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <Link to="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
                 <GiHamburgerMenu />
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

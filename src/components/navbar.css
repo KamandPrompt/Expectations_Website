@@ -86,6 +86,27 @@ li {
     z-index: 1;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .droptxt {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .droptxt:hover {
+    background-color: #ddd;
+}
+
+.fsize {
+    font-size: 19px;
+}
+
 .menu-link ul li {
     font-size: 1.8rem;
 }
