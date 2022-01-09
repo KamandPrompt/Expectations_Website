@@ -99,15 +99,17 @@ li{
     display: none;
   }
   .hero-section {
-    height: 80vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .hero-section p {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
+    text-align: center;
+    margin-left: 10px;
   }
   .hero-section h1 {
     font-size: 5rem;
@@ -258,3 +260,5 @@ li{
       font-size: 3.8rem;
     }
   }
+
+ 
