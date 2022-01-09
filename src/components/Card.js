@@ -4,7 +4,7 @@ function About(){
   var [name,setName]=useState("IIT Mandi");
   var [job,setJob]=useState("Music Club");
   var [about,setAbout]=useState('Music Club strives to provide a platform for the students to express their musical talent, be it singing, playing instruments, sound mixing, etc. Its mission is to help all students to develop good musical knowledge and apppreciate the diverse music present in the world!');
-
+  
   return(
     
     <div className="Card">
