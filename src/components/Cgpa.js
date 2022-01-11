@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
 import './Cgpa.css';
-import logo from './icons-img6.png';
+import logo1 from './icons-img6.png';
+import logo2 from './icons-img8.png';
 import grade from './courseqe.jpg'
  const Cgpa = () => {
     return (
         <>
           <Navbar />
+          <p className='as'>
+
+          <img src={logo1} alt="student" align="right" />
           <section className='border-box box1'>
     <h2>Grading System</h2> 
    <p>Grading is done on a 10-point scale by means of the letter grades: O, A, B, C, D, E, F.  
@@ -55,8 +59,9 @@ import grade from './courseqe.jpg'
     Link
   </a>
     </section>
-    <img src={logo} alt="student" className='im'/>
 
+    <img src={logo2} alt="student"  />
+    
     <section className='border-box box2'>
     <h2> CGPA Calculation</h2> 
     <p >
@@ -68,8 +73,9 @@ The performance up to any time in the course of the student’s program is indic
 
     </p> 
     </section>
+    </p>
         </>
       );
-
-}
-export default Cgpa;
+      
+    }
+    export default Cgpa;

@@ -19,10 +19,13 @@ body {
     /* make the grid repeat */
     background-size: 20px 20px;
   }
-  
+  .as{
+    margin-top: 100px;
+  }
   .box1 {
     /* important attributes for this demo */
     width: 900px;
+    /* left: 0%; */
     height: 360px;
     padding: 10px;
     border: 10px solid #2D3047;
@@ -54,7 +57,6 @@ body {
     border: 10px solid #2D3047;
     margin: 50px;
     margin-top: 20px;
-  
     /* just to make it look nice */
     overflow: hidden;
     color: #fff;
@@ -92,7 +94,8 @@ body {
     color:#fff
   }
   .im{
-    text-align: right;
+    /* text-align: right; */
+    right: 0;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   .center {
