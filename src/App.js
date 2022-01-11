@@ -1,12 +1,16 @@
 import React from 'react';
 import Branches from './components/Branches';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Courses from './components/Courses';
+import Techclubs from './components/pages/Techclubs';
 // import { Switch } from 'react-router';
  const App = () => {
    return (
     <Router>
       <Switch>
+        <Route path="/techclubs">
+          <Techclubs />
+        </Route>
         <Route path="/courses">
           <Courses />
         </Route>
@@ -16,5 +20,5 @@ import Courses from './components/Courses';
       </Switch>
     </Router>
   );
-}
+};
 export default App;
