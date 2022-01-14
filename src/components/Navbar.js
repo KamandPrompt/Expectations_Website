@@ -25,7 +25,7 @@ export const  Navbar = () => {
                 <Link to="/">Branches</Link>
               </li>
               <li>
-                <Link to="#">CGPA</Link>
+                <Link to="/cgpa">CGPA</Link>
               </li>
               <li>
                 <div className="dropdown">

@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  code {
+    font-size: 1.4em;
+    color: #E84855;
+  }
+  h2{
+    color: black;
+    font-size: 30px;
+  }
+  section {
+    display: flex;
+    /* render the grid to show the boxes on top of */
+
+
+    ;
+    /* make the grid repeat */
+    background-size: 20px 20px;
+  }
+  .as{
+    margin-top: 100px;
+  }
+  .box1 {
+    /* important attributes for this demo */
+    width: 900px;
+    /* left: 0%; */
+    height: 360px;
+    padding: 10px;
+    border: 10px solid #2D3047;
+    margin: 50px;
+    margin-top: 20px;
+  
+    /* just to make it look nice */
+    overflow: hidden;
+    color: #fff;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.3;
+    border-radius:20px;
+  }
+  .cor{
+    font-size: red;
+  }
+  .tb{
+    font-size: 20px;
+  }
+  .box2 {
+    /* important attributes for this demo */
+    width: 900px;
+    height: 540px;
+    padding: 10px;
+    border: 10px solid #2D3047;
+    margin: 50px;
+    margin-top: 20px;
+    /* just to make it look nice */
+    overflow: hidden;
+    color: #fff;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.3;
+    border-radius:20px;
+  }
+    
+  .border-box {
+    background-color: #a8b6b4;
+    box-sizing: border-box;
+  }
+  p{
+    font-size: 20px;
+  }
+  .btn{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+  }
+
+  .btn:hover{
+    background:#3498db;
+    color:#fff
+  }
+  .im{
+    /* text-align: right; */
+    right: 0;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  .center {
+    display: block;
+    margin-left: 370px;
+    margin-right: auto;
+    width: 24%;
+  }
