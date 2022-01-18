@@ -4,15 +4,33 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-ico
 import { GiHamburgerMenu } from"react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from 'react-router-dom';
+
 export const  Navbar = () => {
+
+  // function myFunction() {
+  //   document.getElementById("myDropdown").classList.toggle("show");
+  // }
+  
+  // // Close the dropdown if the user clicks outside of it
+  // window.onclick = function(e) {
+  //   if (!e.target.matches('.dropbtn')) {
+  //   var myDropdown = document.getElementById("myDropdown");
+  //     if (myDropdown.classList.contains('show')) {
+  //       myDropdown.classList.remove('show');
+  //     }
+  //   }
+  // }
+  
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
       <>
         <nav className="main-nav">
           <div className="logo">
             <h2>
-              <span>IIT</span>
-              <span> M</span>andi
+              <Link to="/">
+                <span>IIT</span>
+                <span> M</span>andi
+              </Link>
             </h2>
           </div>
           <div
@@ -22,7 +40,7 @@ export const  Navbar = () => {
           >
             <ul>
               <li>
-                <Link to="/">Branches</Link>
+                <Link to="/branches">Branches</Link>
               </li>
               <li>
                 <Link to="#">CGPA</Link>
@@ -30,13 +48,21 @@ export const  Navbar = () => {
               <li>
                 <div className="dropdown">
                   <button className="dropbtn">
-                  <Link to="#" className='fsize'>Clubs
-                    <TiArrowSortedDown />
-                  </Link>
+                    <Link to="#" className="fsize">
+                      Co-Curricular
+                      <TiArrowSortedDown />
+                    </Link>
                   </button>
-                  <div className="dropdown-content">
-                    <Link to="/techclubs" className='droptxt'>Technical Clubs</Link>
-                    <Link to="#" className='droptxt'>Cultural Clubs</Link>
+                  <div className="dropdown-content" id="mydropdown">
+                    <Link to="/techclubs" className="droptxt">
+                      Technical Clubs
+                    </Link>
+                    <Link to="#" className="droptxt">
+                      Cultural Clubs
+                    </Link>
+                    <Link to="/interiit" className="droptxt">
+                      Inter IIT
+                    </Link>
                   </div>
                 </div>
               </li>
@@ -51,19 +77,19 @@ export const  Navbar = () => {
           <div className="social-media">
             <ul className="social-media-links">
               <li>
-                <Link to="https://www.facebook.com/IITMandi2009/">
+                <a href="https://www.facebook.com/IITMandi2009/">
                   <FaFacebookSquare className="facebook" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://www.instagram.com/iit_mandi_campus/">
+                <a href="https://www.instagram.com/iit_mandi_campus/">
                   <FaInstagramSquare className="instagram" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://www.youtube.com/channel/UCSybolnMMi_8vc5OoX36Vwg">
+                <a href="https://www.youtube.com/c/PerceptionIITMandi">
                   <FaYoutubeSquare className="youtube" />
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="hamburger-menu">

@@ -45,7 +45,7 @@ export const  Courses = () => {
             </ul>
             </p> 
             <div className='back-img'>
-                <img src={grad} className='img' alt="graduation cap logo"/ >
+                <img src={grad} className='img' alt="graduation cap logo" />
  
             </div>
         </>
