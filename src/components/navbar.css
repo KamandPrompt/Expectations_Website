@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,10 +26,10 @@ li {
     height: 10rem;
     display: grid;
     grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
-.logo {
+.logo{
     background-color: #fff;
     grid-column: 2/3;
     justify-content: start;
