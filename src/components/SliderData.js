@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+      image:
+        'https://www.collegechalo.com/news/wp-content/uploads/2020/10/IIT-Mandi-winters-2048x1362.jpg'
+    },
+    {
+      image:
+        'https://www.collegechalo.com/news/wp-content/uploads/2020/10/IIT-Mandi-winters-2048x1362.jpg'
+    },
+    {
+      image:
+        'https://www.collegechalo.com/news/wp-content/uploads/2020/10/IIT-Mandi-winters-2048x1362.jpg'
+    },
+    {
+      image:
+        'https://www.collegechalo.com/news/wp-content/uploads/2020/10/IIT-Mandi-winters-2048x1362.jpg'
+    },
+    {
+      image:
+        'https://www.collegechalo.com/news/wp-content/uploads/2020/10/IIT-Mandi-winters-2048x1362.jpg'
+    }
+  ];

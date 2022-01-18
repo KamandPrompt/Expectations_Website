@@ -1,0 +1,59 @@
+html *::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(0, 0, 0);
+  background: rgb(157, 211, 255);
+}
+
+html *::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(157, 211, 255);
+}
+
+.slider {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-carousel {
+  width: 1870px;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0.9;
+  transition-duration: 0.3s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}

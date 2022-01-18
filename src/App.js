@@ -1,38 +1,32 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import About from './components/Card'
-import About2 from './components/Card2'
-import About3 from './components/Card3'
-import About4 from './components/Card4'
-import About5 from './components/Card5'
-import About6 from './components/Card6'
-import Header from './components/Hero'
-
-import './App.css'
-function App(){
-  return(
-    <div className='App'>
-      <Navbar/>
-      <Header/>
-      <div className='main'>
-        <About/>
-        <About2/>
-        <About3/>
-        <About4/>
-        <About5/>
-        <About6/>
-        
-        
-      </div>
-    
-      
-      
-    </div>
-    
-    
-  )
-}
-        
-
-
+import React from 'react';
+import Branches from './components/Branches';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Courses from './components/Courses';
+import Techclubs from './components/pages/Techclubs';
+import Interiit from './components/pages/Interiit';
+import Home from './components/pages/Home';
+// import { Switch } from 'react-router';
+ const App = () => {
+   return (
+    <Router>
+      <Switch>
+        <Route path="/techclubs">
+          <Techclubs />
+        </Route>
+        <Route path="/courses">
+          <Courses />
+        </Route>
+        <Route path="/interiit">
+          <Interiit />
+        </Route>
+        <Route path="/branches">
+          <Branches />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
 export default App;
