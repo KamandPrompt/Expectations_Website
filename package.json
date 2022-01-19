@@ -1,8 +1,10 @@
 {
   "name": "navbar",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -19,10 +21,12 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+   
+
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +45,27 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  
+    "redirectRules":
+    [
+     {
+       "type": "string",
+       "comment": "this rule is applied first",
+       "expression": "/index.htm",
+       "location": "/home.html"
+     },
+     {
+       "type": "wildcard",
+       "expression": "/items/*?page=*",
+       "location": "/<$page$>?item=<$wildcard(1)$>",
+       "code": 302
+     }
+   ]
+  
+ 
+  
 }

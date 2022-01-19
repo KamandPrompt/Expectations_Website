@@ -35,10 +35,17 @@ function Techclubs() {
                 </a>
               </div>
             </div>
+
+            <a
+                class="ca3-scroll-down-link ca3-scroll-down-arrow"
+                data-ca3_iconfont="ETmodules"
+                data-ca3_icon=""
+                href="#scroll"
+              ></a>
           </div>
         </div>
       </div>
-      <div className="heading">
+      <div className="heading" id="scroll">
         <h4>Technical Clubs</h4>
       </div>
       <div className="container-snip">
@@ -120,7 +127,8 @@ function Techclubs() {
               community. As the name celebrates our crazy love for subjects
               related to business, we always strive to give a glimpse of the
               world of business and finance.
-            </p><br/>
+            </p>
+            <br />
             <button className="button-59" role="button">
               <a href="https://ecell.iitmandi.co.in/">Visit</a>
             </button>
@@ -225,7 +233,8 @@ function Techclubs() {
               active professional association and standards developing
               organization for engineering professionals in various industries.A
               platform to provide access to the global SAE community .
-            </p><br/>
+            </p>
+            <br />
             <button className="button-59" role="button">
               <a href="https://wiki.iitmandi.co.in/p/SAE">Visit</a>
             </button>
