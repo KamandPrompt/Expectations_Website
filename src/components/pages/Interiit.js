@@ -1,15 +1,25 @@
 import React from "react";
 import "./interiit.css";
 import Navbar from "../Navbar";
+import useDocumentTitle from "../useDocumentTitle";
+import Footer from "../Footer";
 // import Footer from "../Footer";
 // import '../Footer.css';
 
+// dynamic titles props
+function Page(props) {
+  const titleSuffix = ' | Expectations, IIT Mandi'
+  useDocumentTitle(`${props.title}${titleSuffix}`)
+  return <div>{props.content}</div>
+}
+
 function Interiit() {
   return (
+    <Page content={
     <div>
       <Navbar />
       <div className="heading">
-        <h4>Inter IIT Meets</h4>
+        <h3>Inter IIT Meets</h3>
       </div>
       <div className="container-meet">
         <div className="container-content">
@@ -76,7 +86,9 @@ function Interiit() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+    } title='InterIIT' />
   );
 }
 
