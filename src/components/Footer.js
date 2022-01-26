@@ -76,10 +76,10 @@ function Footer() {
                   <Link to="/">Cult Clubs</Link>
                 </li>
                 <li>
-                  <Link to="/">Sports</Link>
+                  <Link to="/sports">Sports</Link>
                 </li>
                 <li>
-                  <Link to="/">InterIIT</Link>
+                  <Link to="/interiit">InterIIT</Link>
                 </li>
               </ul></div>
             </div>
