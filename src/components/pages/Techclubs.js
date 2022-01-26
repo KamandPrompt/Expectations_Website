@@ -1,11 +1,20 @@
 import React from "react";
 import "./techclub.css";
 import Navbar from "../Navbar";
-// import Footer from "../Footer";
+import useDocumentTitle from "../useDocumentTitle";
+import Footer from "../Footer";
 // import '../Footer.css';
+
+// dynamic titles props
+function Page(props) {
+  const titleSuffix = ' | Expectations, IIT Mandi'
+  useDocumentTitle(`${props.title}${titleSuffix}`)
+  return <div>{props.content}</div>
+}
 
 function Techclubs() {
   return (
+    <Page content={
     <div>
       <Navbar />
       <div className="banner">
@@ -37,7 +46,7 @@ function Techclubs() {
             </div>
 
             <a
-                class="ca3-scroll-down-link ca3-scroll-down-arrow"
+                className="ca3-scroll-down-link ca3-scroll-down-arrow"
                 data-ca3_iconfont="ETmodules"
                 data-ca3_icon=""
                 href="#scroll"
@@ -45,8 +54,9 @@ function Techclubs() {
           </div>
         </div>
       </div>
-      <div className="heading" id="scroll">
-        <h4>Technical Clubs</h4>
+      <div id="scroll"></div>
+      <div className="heading nav-unhide">
+        <h4>Technical Society</h4>
       </div>
       <div className="container-snip">
         <figure className="snip1559">
@@ -241,8 +251,10 @@ function Techclubs() {
           </figcaption>
         </figure>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
+
+    } title="TechSoc" />
   );
 }
 

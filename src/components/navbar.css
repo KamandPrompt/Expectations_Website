@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 a {
@@ -23,10 +24,14 @@ li {
 
 .main-nav {
     width: 100%;
+    z-index: 12;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
     height: 10rem;
     display: grid;
     grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    box-shadow: rgba(50, 50, 93, 0.178) 0px 60px 280px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .logo{
@@ -67,7 +72,7 @@ li {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: white;
@@ -103,8 +108,12 @@ li {
     background-color: #ddd;
 }
 
+/* .show {
+    display: block;
+} */
+
 .fsize {
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .menu-link ul li {

@@ -1,51 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
 
 ::-moz-selection {
-    color: rgb(0, 0, 0);
-    background: rgb(157, 211, 255);
-  }
-  
-  ::selection {
-    color: rgb(0, 0, 0);
-    background: rgb(157, 211, 255);
-  }
-  
+  color: rgb(0, 0, 0);
+  background: rgb(157, 211, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(157, 211, 255);
+}
 
 .heading {
-    color: rgb(15, 15, 144);
-    padding: 30px;
-    font-size: 4rem;
-    text-align: center;
+  color: rgb(15, 15, 144);
+  padding: 30px;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .container-content {
-    display: flex;
-    align-items: left;
-    justify-content: space-around;
-    padding: 40px 0px;
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  padding: 40px 0px;
 }
 
 .interiit-image {
-    flex-basis: 40%;
-    height: auto;
-    width: 70%;
-    min-width: 500px;
+  flex-basis: 40%;
+  height: auto;
+  width: 70%;
+  min-width: 500px;
 }
 
 .text {
-    font-size: 20px;
-    padding-left: 50px;
+  font-size: 20px;
+  padding-left: 50px;
 }
 
 .container-meet {
-    margin: 10px 100px;
-    margin-left: 13rem;
+  margin: 10px 100px;
+  margin-left: 13rem;
 }
 
 .container-text {
-    padding-right: 10%;
+  padding-right: 10%;
 }
 
 .meet-heading {
-    color: rgb(22, 76, 192);
+  color: rgb(22, 76, 192);
+}
+
+a.highlight:link {
+  color: #05a098;
+}
+a.highlight:hover {
+  color: #390992;
+}
+
+.container-para{
+  padding: 10px 0;
+}
+
+.sports-image{
+  flex-basis: 40%;
+  height: auto;
+  width: 40%;
+  min-width: 400px;
 }
