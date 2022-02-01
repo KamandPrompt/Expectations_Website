@@ -76,7 +76,7 @@ export const  Navbar = () => {
                     <Link to="/techclubs" className="droptxt">
                       Technical Clubs
                     </Link>
-                    <Link to="#" className="droptxt">
+                    <Link to="/culclub" className="droptxt">
                       Cultural Clubs
                     </Link>
                     <Link to="/interiit" className="droptxt">

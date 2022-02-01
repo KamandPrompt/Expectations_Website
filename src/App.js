@@ -7,6 +7,7 @@ import Interiit from './components/pages/Interiit';
 import Home from './components/pages/Home';
 import Nptel from './components/pages/Nptel';
 import Sports from './components/pages/Sports';
+import Culclub from './components/pages/culclub';
 
 // import { Switch } from 'react-router';
  const App = () => {
@@ -15,6 +16,9 @@ import Sports from './components/pages/Sports';
       <Switch>
         <Route path="/techclubs">
           <Techclubs />
+        </Route>
+        <Route path="/culclub">
+          <Culclub/>
         </Route>
         <Route path="/courses">
           <Courses />
