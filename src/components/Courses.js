@@ -12,7 +12,7 @@ export const  Courses = () => {
         {/* <div className='img'> */}
             <section className='heading'>
                 <center>
-                <h1>Courses Offered</h1>
+                <h1>Courses</h1>
                 </center>
                 </section>
             <br></br>

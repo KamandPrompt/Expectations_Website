@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-icons/fa";
 import { GiHamburgerMenu } from"react-icons/gi"
 export const  Navbar = () => {
@@ -25,9 +26,9 @@ export const  Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href='#'>
-                            Scholarships
-                        </a>
+                    <NavLink to="/Placements">
+                            Placements
+                        </NavLink>
                     </li>
                     <li>
                         <a href='#'>
