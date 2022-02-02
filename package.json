@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -46,6 +47,21 @@
     ]
   },
   "devDependencies": {
-    "url-loader": "^4.1.1"
-  }
+    "url-loader": "^4.1.1",
+    "gh-pages": "^3.2.3"
+  },
+  "redirectRules": [
+    {
+      "type": "string",
+      "comment": "this rule is applied first",
+      "expression": "/index.htm",
+      "location": "/home.html"
+    },
+    {
+      "type": "wildcard",
+      "expression": "/items/*?page=*",
+      "location": "/<$page$>?item=<$wildcard(1)$>",
+      "code": 302
+    }
+  ]
 }

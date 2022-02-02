@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import './branches.css';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-icons/fa";
-import { GiHamburgerMenu } from"react-icons/gi"
-import grad from "./graduation-cap.png"
-import Navbar from './Navbar'
+import { GiHamburgerMenu } from"react-icons/gi";
+import useDocumentTitle from './useDocumentTitle';
+import grad from "./graduation-cap.png";
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+// dynamic titles props
+function Page(props) {
+    const titleSuffix = ' | Expectations, IIT Mandi'
+    useDocumentTitle(`${props.title}${titleSuffix}`)
+    return <div>{props.content}</div>
+  }
+
 export const  Courses = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
+        <Page content={
         <>
         <Navbar />
         {/* <div className='img'> */}
@@ -45,10 +56,12 @@ export const  Courses = () => {
             </ul>
             </p> 
             <div className='back-img'>
-                <img src={grad} className='img' alt="graduation cap logo"/ >
+                <img src={grad} className='img' alt="graduation cap logo" />
  
             </div>
+            <Footer />
         </>
+        } title="Courses" />
     )
 }
 
