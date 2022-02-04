@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-icons/fa";
 import { GiHamburgerMenu } from"react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
@@ -7,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 export const  Navbar = () => {
 
+  // const [click, setClick] = useState(false);
   // function myFunction() {
   //   document.getElementById("myDropdown").classList.toggle("show");
   // }
@@ -40,10 +42,31 @@ export const  Navbar = () => {
           >
             <ul>
               <li>
-                <Link to="/branches">Branches</Link>
-              </li>
-              <li>
-                <Link to="#">CGPA</Link>
+                <div className="dropdown">
+                  <button className="dropbtn">
+                    <Link to="#" className="fsize">
+                      Academics
+                      <TiArrowSortedDown />
+                    </Link>
+                  </button>
+                  <div className="dropdown-content" id="mydropdown">
+                    <Link to="/branches" className="droptxt">
+                      Branches
+                    </Link>
+                    <Link to="#" className="droptxt">
+                      CGPA
+                    </Link>
+                    <Link to="/courses" className="droptxt">
+                      Courses
+                    </Link>
+                    <Link to="/nptel" className="droptxt">
+                      NPTEL
+                    </Link>
+                    <Link to="/Placements" className="droptxt">
+                      Placements
+                    </Link>
+                  </div>
+                </div>
               </li>
               <li>
                 <div className="dropdown">
@@ -57,20 +80,20 @@ export const  Navbar = () => {
                     <Link to="/techclubs" className="droptxt">
                       Technical Clubs
                     </Link>
-                    <Link to="#" className="droptxt">
+                    <Link to="/culclub" className="droptxt">
                       Cultural Clubs
                     </Link>
                     <Link to="/interiit" className="droptxt">
                       Inter IIT
+                    </Link>
+                    <Link to="/sports" className='droptxt'>
+                      Sports Facilities
                     </Link>
                   </div>
                 </div>
               </li>
               <li>
                 <Link to="#">Fees</Link>
-              </li>
-              <li>
-                <Link to="/courses">Courses</Link>
               </li>
             </ul>
           </div>

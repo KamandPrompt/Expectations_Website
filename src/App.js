@@ -5,6 +5,11 @@ import Courses from './components/Courses';
 import Techclubs from './components/pages/Techclubs';
 import Interiit from './components/pages/Interiit';
 import Home from './components/pages/Home';
+import Nptel from './components/pages/Nptel';
+import Sports from './components/pages/Sports';
+import Culclub from './components/pages/culclub';
+import Placements from './components/Placements';
+
 // import { Switch } from 'react-router';
  const App = () => {
    return (
@@ -12,6 +17,9 @@ import Home from './components/pages/Home';
       <Switch>
         <Route path="/techclubs">
           <Techclubs />
+        </Route>
+        <Route path="/culclub">
+          <Culclub/>
         </Route>
         <Route path="/courses">
           <Courses />
@@ -21,6 +29,15 @@ import Home from './components/pages/Home';
         </Route>
         <Route path="/branches">
           <Branches />
+        </Route>
+        <Route path="/nptel">
+          <Nptel />
+        </Route>
+        <Route path="/sports">
+          <Sports />
+        </Route>
+        <Route path="/Placements">
+          <Placements />
         </Route>
         <Route path="/">
           <Home />
