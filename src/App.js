@@ -7,7 +7,9 @@ import Interiit from './components/pages/Interiit';
 import Home from './components/pages/Home';
 import Nptel from './components/pages/Nptel';
 import Sports from './components/pages/Sports';
-
+import Hostels from './components/pages/Hostels'
+import Places from './components/pages/Places';
+import Measure from "./components/pages/Measure"
 // import { Switch } from 'react-router';
  const App = () => {
    return (
@@ -28,8 +30,17 @@ import Sports from './components/pages/Sports';
         <Route path="/nptel">
           <Nptel />
         </Route>
+        <Route path="/hostels">
+          <Hostels />
+        </Route>
         <Route path="/sports">
           <Sports />
+        </Route>
+        <Route path="/places">
+          <Places />
+        </Route>
+        <Route path="/measure">
+          <Measure />
         </Route>
         <Route path="/">
           <Home />
