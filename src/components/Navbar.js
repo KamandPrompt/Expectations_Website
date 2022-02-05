@@ -62,12 +62,9 @@ export const  Navbar = () => {
                     <Link to="/nptel" className="droptxt">
                       NPTEL
                     </Link>
-<<<<<<< HEAD
-=======
                     <Link to="/Placements" className="droptxt">
                       Placements
                     </Link>
->>>>>>> main
                   </div>
                 </div>
               </li>
@@ -116,12 +113,9 @@ export const  Navbar = () => {
                   </div>
                 </div>
               </li>
-<<<<<<< HEAD
               <li>
                 <Link to="#">Fees</Link>
               </li>
-=======
->>>>>>> main
             </ul>
           </div>
           <div className="social-media">
