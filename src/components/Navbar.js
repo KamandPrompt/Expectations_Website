@@ -62,9 +62,12 @@ export const  Navbar = () => {
                     <Link to="/nptel" className="droptxt">
                       NPTEL
                     </Link>
+<<<<<<< HEAD
+=======
                     <Link to="/Placements" className="droptxt">
                       Placements
                     </Link>
+>>>>>>> main
                   </div>
                 </div>
               </li>
@@ -93,8 +96,32 @@ export const  Navbar = () => {
                 </div>
               </li>
               <li>
+                <div className="dropdown">
+                  <button className="dropbtn">
+                    <Link to="#" className="fsize">
+                      Campus
+                      <TiArrowSortedDown />
+                    </Link>
+                  </button>
+                  <div className="dropdown-content" id="mydropdown">
+                    <Link to="/hostels" className="droptxt">
+                      Hostels
+                    </Link>
+                    <Link to="/places" className="droptxt">
+                      Places and Eateries
+                    </Link>
+                    <Link to="/measure" className="droptxt">
+                      Covid Measures
+                    </Link>
+                  </div>
+                </div>
+              </li>
+<<<<<<< HEAD
+              <li>
                 <Link to="#">Fees</Link>
               </li>
+=======
+>>>>>>> main
             </ul>
           </div>
           <div className="social-media">
