@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare  } from "react-icons/fa";
 import { GiHamburgerMenu } from"react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
@@ -61,6 +62,12 @@ export const  Navbar = () => {
                     <Link to="/nptel" className="droptxt">
                       NPTEL
                     </Link>
+<<<<<<< HEAD
+=======
+                    <Link to="/Placements" className="droptxt">
+                      Placements
+                    </Link>
+>>>>>>> main
                   </div>
                 </div>
               </li>
@@ -76,7 +83,7 @@ export const  Navbar = () => {
                     <Link to="/techclubs" className="droptxt">
                       Technical Clubs
                     </Link>
-                    <Link to="#" className="droptxt">
+                    <Link to="/culclub" className="droptxt">
                       Cultural Clubs
                     </Link>
                     <Link to="/interiit" className="droptxt">
@@ -109,9 +116,12 @@ export const  Navbar = () => {
                   </div>
                 </div>
               </li>
+<<<<<<< HEAD
               <li>
                 <Link to="#">Fees</Link>
               </li>
+=======
+>>>>>>> main
             </ul>
           </div>
           <div className="social-media">

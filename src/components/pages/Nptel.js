@@ -61,7 +61,11 @@ function Nptel() {
             </div>
             <p className="container-text">
               Checkout the NPTEL link
+<<<<<<< HEAD
               <a href="https://nptel.ac.in/" className="highlight" target="_blank">
+=======
+              <a href="https://nptel.ac.in/" className="highlight">
+>>>>>>> main
                 {" "}
                 Here
               </a>
