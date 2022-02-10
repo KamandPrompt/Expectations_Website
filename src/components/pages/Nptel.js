@@ -16,6 +16,7 @@ function Nptel() {
     <Page content={
     <div>
       <Navbar />
+      <section className="hero-section">
       <div className="heading">
         <h3>NPTEL Courses</h3>
       </div>
@@ -69,6 +70,7 @@ function Nptel() {
           </div>
         </div>
       </div>
+      </section>
       <Footer />
     </div>
     } title="NPTEL" />

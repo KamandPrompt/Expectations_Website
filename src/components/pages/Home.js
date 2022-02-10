@@ -18,8 +18,10 @@ function Home() {
     <Page content={
     <div>
       <Navbar />
+      <div className="home-page-container">
       <div className="container-carousel">
         <Carousel slides={SliderData} />
+      </div>
       </div>
       <Footer />
     </div>

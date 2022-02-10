@@ -57,3 +57,7 @@ html *::selection {
   transition-duration: 1s;
   transform: scale(1.02);
 }
+
+.home-page-container{
+  margin: 10rem 0 0 0 !important;
+}

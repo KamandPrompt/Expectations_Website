@@ -9,6 +9,10 @@
 html {
     font-size: 62.5%;
     height: 100%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
 }
 
 a {
@@ -26,7 +30,7 @@ li {
     width: 100%;
     z-index: 12;
     background-color: rgb(255, 255, 255);
-    position: sticky;
+    position: fixed !important;
     top: 0;
     height: 10rem;
     display: grid;
@@ -53,6 +57,52 @@ li {
     align-items: center;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    .nav-logo{
+        display: none;
+    }
+    .nav-links-bar{
+        display: none !important;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        padding-bottom: 20px;
+        left: 0;
+        list-style: none;
+        background-color: #ffffff;
+        height: max-content !important;
+        transition: all 0.3s ease-out;
+        width: 100vw;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0) !important;
+        text-align: center !important;
+        margin-bottom: 10px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 23px;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        top: 35px;
+        right: 25px;
+    }
+}
+
 .logo h2 {
     font-size: 2.5rem;
     font-weight: 400;
@@ -70,7 +120,10 @@ li {
     float: left;
     overflow: hidden;
 }
-
+.dropbtn{
+    width: 200px;
+    height: 55px;
+}
 .dropdown .dropbtn {
     font-size: 18px;
     border: none;
@@ -80,8 +133,12 @@ li {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-align: center;
 }
-
+.dropbtn:hover{
+    background-color: rgb(216, 240, 246);
+    border-radius: 13px 13px 0 0;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -93,6 +150,8 @@ li {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .dropdown-content .droptxt {
@@ -106,11 +165,31 @@ li {
 
 .dropdown-content .droptxt:hover {
     background-color: #ddd;
+    border-radius: 0px;
 }
 
 /* .show {
     display: block;
 } */
+
+.single-nav-items{
+    font-size: 22px !important;
+    text-align: center;
+    font-weight: 500;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.single-nav-items:hover{
+    background-color: rgb(216, 240, 246);
+    border-radius: 13px;
+    text-decoration: none !important;
+}
 
 .fsize {
     font-size: 22px;
@@ -129,71 +208,18 @@ li {
 .menu-link ul li:hover>a {
     transform-origin: left;
     color: rgba(0, 0, 3, 1);
-    text-decoration: underline;
     transition: 0.5s;
 }
 
-.social-media {
-    /* background-color: black; */
-    grid-column: 4/5;
-}
-
-.social-media ul {
-    height: 10rem;
-    display: grid;
-    /* justify-content: space-around; */
-    grid-template-columns: 3fr repeat(3, 1fr);
-    align-items: center;
-}
-
-.social-media ul li {
-    text-align: right;
-}
-
-.social-media ul li:first-child {
-    grid-column: 2/3;
-}
-
-.facebook {
-    color: #3b5998;
-}
-
-.instagram {
-    color: #c32aa3;
-}
-
-.youtube {
-    color: #ff0000;
-}
-
-.social-media ul li {
-    font-size: 1.8rem;
-}
-
-.social-media .hamburger-menu {
-    display: none;
-}
-
 .hero-section {
-    height: 80vh;
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column;
 }
 
-.hero-section p {
-    font-size: 3rem;
-    text-transform: capitalize;
-}
-
-.hero-section h1 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-@media (max-width: 1080px) {
+/* @media (max-width: 1080px) {
     .main-nav {
         height: 8rem;
         grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
@@ -205,8 +231,6 @@ li {
     }
 }
 
-
-/* responsive css style  */
 
 @media (max-width: 998px) {
     .main-nav {
@@ -312,8 +336,7 @@ li {
         display: block;
         font-size: 2.5rem;
     }
-    /* hero section  */
     .hero-section h1 {
         font-size: 3.8rem;
     }
-}
+} */

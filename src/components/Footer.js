@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookSquare, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaYoutube, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import  { RiInstagramFill } from "react-icons/ri"
 import { Link } from "react-router-dom";
 import Techclubs from "./pages/Techclubs";
 import logo from "./IITMandiLogo.png";
@@ -19,7 +20,7 @@ function Footer() {
               <a href="https://iitmandi.ac.in">
                 <img className="footer-logo-image" src={logo} alt="iitmandi" />
               </a></td>
-              <td>
+              <td className="college-addr">
               Indian Institute of Technology Mandi
               <br />
               Kamand, Mandi - 175075
@@ -51,6 +52,14 @@ function Footer() {
                     className="footer-icon"
                   >
                     <FaYoutube size={30} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/iit_mandi_campus/"
+                    className="footer-icon"
+                  >
+                    <RiInstagramFill size={30} />
                   </a>
                 </li>
               </ul>
@@ -87,10 +96,10 @@ function Footer() {
               <h1>Resources</h1><hr className="footer-hr" />
               <div className="footer-link-items">
               <ul>
-                <li>Webmail</li>
-                <li>Redeem code</li>
-                <li>WHOIS lookup</li>
-                <li>Site map</li>
+                <li><a href="https://iitmandi.ac.in">iitmandi.ac.in</a></li>
+                <li><a href="https://students.iitmandi.ac.in">Students</a></li>
+                <li><a href="https://research.iitmandi.ac.in/main/placements/">Placement Cell</a></li>
+                <li><a href="http://www.iitmandi.ac.in/academics/scholarship.php">Scholarships</a></li>
                 <li>Web templates</li>
                 <li>Email templates</li>
               </ul>

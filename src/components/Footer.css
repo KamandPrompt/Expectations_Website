@@ -5,10 +5,10 @@
   background-color: #e0e0e0;
 }
 .footer-cols{
-  margin-left: 18rem;
+  margin-left: 9rem;
 }
 .footer .col {
-  width: 190px;
+  width: 230px;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 19px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
   color: rgb(70, 70, 70);
@@ -35,7 +35,7 @@
 }
 .footer .col ul li a {
   color: #6b6b6b;
-  font-size: 14px;
+  font-size: 17px;
   font-family: inherit;
   font-weight: bold;
   padding: 5px 0px 5px 0px;
@@ -69,6 +69,10 @@
 }
 .clearfix {
   clear: both;
+}
+
+.college-addr{
+  font-size: 12px;
 }
 
 .footer-logo-image{
@@ -110,6 +114,14 @@
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .college-addr{
+    position: relative;
+    clear: both;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .footer .col {
     width: 50%;

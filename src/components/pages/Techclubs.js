@@ -19,7 +19,7 @@ function Techclubs() {
       <Navbar />
       <div className="banner">
         <div className="banner__content">
-          <div className="container">
+          <div className="container-clubs">
             <div className="banner__text">
               <h1 className="banner_heading">Technical Clubs</h1>
               <p>

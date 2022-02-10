@@ -21,11 +21,10 @@ export const  Courses = () => {
         <>
         <Navbar />
         {/* <div className='img'> */}
-            <section className='heading'>
-                <center>
-                <h1>Courses Offered</h1>
-                </center>
-                </section>
+        <section className='hero-section page-container'>
+            <div className='heading'>
+                <h3>Courses Offered</h3>
+                </div>
             <br></br>
             <p className='para'>
             Students are admitted to undergraduate courses (Four-Year Bachelor of Technology) through an All-India entrance known as Joint Entrance Examination (JEE) conducted by all the IIT's, at various centres across the country.
@@ -56,9 +55,10 @@ export const  Courses = () => {
             </ul>
             </p> 
             <div className='back-img'>
-                <img src={grad} className='img' alt="graduation cap logo" />
+                {/* <img src={grad} className='img' alt="graduation cap logo" /> */}
  
             </div>
+            </section>
             <Footer />
         </>
         } title="Courses" />
